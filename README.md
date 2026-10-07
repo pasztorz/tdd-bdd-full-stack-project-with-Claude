@@ -26,3 +26,7 @@ This creates a development workflow in which:
 * Unit and integration tests support the implementation at lower levels of the system.
 * Production code is implemented incrementally to satisfy the tests and requirements.
 * Claude Code is used as an AI-assisted development tool throughout this process.
+
+## GitHub repository
+
+GitHub repo url:  https://github.com/pasztorz/tdd-bdd-full-stack-project-with-Claude.git
