@@ -2,11 +2,28 @@
 # <p style="text-align:center">Carpenter Website<br>and Webshop</p>
 ## <p style="text-align:center">Full Stack Project<br><br>with Test-Driven Development and<br>Behavior-Driven Development<br>Approach<br>and Claude Code AI Harness Framework</p>
 
-## About the project
+## 1. About the project
 
 This is a full stack project for developing a carpenter page with an integrated webshop of ready-made stock items as well as a custom product order functionality using built-in message sender interface. For implementation, Claude Code is used as AI harness framework.
 
-## Approach and Technologies
+### 1.1. Project Goals
+**PRIOR:**
+- develop a carpenter website
+- improve it with a ready-made stock items' webshop fun ctionality
+- and add a message sender function as a standardised framework to order custom products by size and material.
+
+**SECONDARY**
+- learn and practice complementary technologies
+
+### 1.2. GitHub repository
+
+GitHub repo url:  https://github.com/pasztorz/tdd-bdd-full-stack-project-with-Claude.git
+
+As this is a CV project, the repository is public.
+
+## 2. Approach and Technologies
+
+### 2.1. Approach
 
 The primary development approach is **Test-Driven Development** (**`TDD`**).
 
@@ -27,6 +44,25 @@ This creates a development workflow in which:
 * Production code is implemented incrementally to satisfy the tests and requirements.
 * Claude Code is used as an AI-assisted development tool throughout this process.
 
-## GitHub repository
+### 2.2. Development Technologies:
 
-GitHub repo url:  https://github.com/pasztorz/tdd-bdd-full-stack-project-with-Claude.git
+  *Languages and technologies `known by me`.*
+
+  * *Frontend:* **`Javascript`**
+  * *Backend:* **`Java`**
+  * *Tests:*
+    - User Stories-Test Cases: **`Gherkin-Cucumber`**
+    - test automation code: **`Java with Selenium`**
+    - API - automated, Java with Selenium **`RestAssured`**
+    - manual tests: **`JIRA`**
+  * *CI/CD:* **`GitHub Action`**
+
+### 2.3. Learning Technologies:
+
+  * *Frontend:* **`Typescript`**
+  * *Backend and mobile devices:* **`Python`**
+  * *Tests:*
+    - test automation:
+    - API
+    - manual tests:
+  
