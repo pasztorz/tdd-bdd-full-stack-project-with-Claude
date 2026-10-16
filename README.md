@@ -44,25 +44,30 @@ This creates a development workflow in which:
 * Production code is implemented incrementally to satisfy the tests and requirements.
 * Claude Code is used as an AI-assisted development tool throughout this process.
 
-### 2.2. Development Technologies:
+### 2.2 Technology Roadmap
+#### 2.2.1 Version 1 - Initial (Development) Technology Stack
 
-  *Languages and technologies `known by me`.*
+  For this stack, *technologies `known by me`* at the moment of starting with the implementation are used. 
 
   * *Frontend:* **`Javascript`**
   * *Backend:* **`Java`**
   * *Tests:*
-    - User Stories-Test Cases: **`Gherkin-Cucumber`**
-    - test automation code: **`Java with Selenium`**
-    - API - automated, Java with Selenium **`RestAssured`**
+    - Unit tests: **`JUnit`**
+    - Browser/UI automation: **`Selenium with Java`**
+    - API - **`REST Assured with Java`**
+    - BDD scenarios: **`Gherkin-Cucumber`**
     - manual tests: **`JIRA`**
   * *CI/CD:* **`GitHub Action`**
 
-### 2.3. Learning Technologies:
+#### 2.2.2. Version 2 - Future Learning Goals:
+
+Potentional technologies to explore in later phase of the project:
 
   * *Frontend:* **`Typescript`**
   * *Backend and mobile devices:* **`Python`**
   * *Tests:*
-    - test automation:
-    - API
+    - Browser/UI automation: **`Playwright with Python`**
+    - API - **`Postman`**
     - manual tests:
+    - mobile development.
   
