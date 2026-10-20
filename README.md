@@ -1,18 +1,18 @@
 #
 # <p style="text-align:center">Carpenter Website<br>and Webshop</p>
-## <p style="text-align:center">Full Stack Project<br><br>with Test-Driven Development and<br>Behavior-Driven Development<br>Approach<br>and Claude Code AI Harness Framework</p>
+## <p style="text-align:center">Full Stack Project<br><br>applying Test-Driven Development and<br>Behavior-Driven Development<br>Approach<br>and Claude Code AI Harness Framework</p>
 
 ## 1. About the project
 
-This is a full stack project for developing a carpenter page with an integrated webshop of ready-made stock items as well as a custom product order functionality using built-in message sender interface. For implementation, Claude Code is used as AI harness framework.
+This project aims to develop a full stack website for a carpenter, inculding a webshop of ready-made stock items as well as a structured messaging interface for custom product requests based on customer-specified dimensions and materials. For implementation, Claude Code is used as AI harness framework.
 
 ### 1.1. Project Goals
-**PRIOR:**
+**Primary Goals:**
 - develop a carpenter website
-- improve it with a ready-made stock items' webshop fun ctionality
-- and add a message sender function as a standardised framework to order custom products by size and material.
+- with a webshop for ready-made stock items
+- and with a message sender function as a standardised framework to order custom products by size and material.
 
-**SECONDARY**
+**Secondary Goals**
 - learn and practice complementary technologies
 
 ### 1.2. GitHub repository
@@ -55,13 +55,13 @@ This creates a development workflow in which:
     - Unit tests: **`JUnit`**
     - Browser/UI automation: **`Selenium with Java`**
     - API - **`REST Assured with Java`**
-    - BDD scenarios: **`Gherkin-Cucumber`**
-    - manual tests: **`JIRA`**
+    - BDD scenarios: **`Gherkin and Cucumber`**
+    - manual tests: **`Jira`**
   * *CI/CD:* **`GitHub Action`**
 
 #### 2.2.2. Version 2 - Future Learning Goals:
 
-Potentional technologies to explore in later phase of the project:
+Potential technologies to explore in later phase of the project:
 
   * *Frontend:* **`Typescript`**
   * *Backend and mobile devices:* **`Python`**
