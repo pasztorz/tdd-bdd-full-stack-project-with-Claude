@@ -1,0 +1,34 @@
+
+name: Feature Request
+description: Propose a new feature for the carpenter website or webshop.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: Describe who needs this feature and why.
+      placeholder: "As a customer, I want to ... so that ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Describe what must be true for the feature to be accepted.
+      placeholder: |
+        Given ...
+        When ...
+        Then ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: Add relevant technical details or questions.
+    validations:
+      required: false
