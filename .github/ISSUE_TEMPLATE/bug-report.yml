@@ -1,0 +1,81 @@
+
+name: Bug Report
+description: Report unexpected behavior in the carpenter website or webshop.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug.
+        Please provide enough information to reproduce the problem.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: Describe the problem briefly.
+      placeholder: "The product price is not displayed correctly."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Explain how to reproduce the problem.
+      placeholder: |
+        1. Open the webshop.
+        2. Select a product.
+        3. Add it to the cart.
+        4. Observe the result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: "The correct product price should be displayed."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happens instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How seriously does this bug affect the user?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include browser, operating system, or application version when relevant.
+      placeholder: "e.g. Chrome on Windows 11"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Information
+      description: Add relevant logs, screenshots, or other details.
+      placeholder: "Do not include passwords, API keys, or other secrets."
+    validations:
+      required: false
