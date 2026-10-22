@@ -39,6 +39,9 @@ See "1.1. Project Goals" in README.md.
 - Never commit secrets, credentials, API keys, or passwords to the repository.
 
 ### 6. Working Process and Change Management
+
+A task counts as **substantial** if it touches more than one file, adds or changes a dependency, changes architecture or behavior, or is not trivially reversible. Small wording or formatting fixes (e.g. typo fixes, a single clarifying sentence) are not substantial and don't need their own issue/branch.
+
 For each substantial task:
 - Explain the goal and proposed approach briefly.
 - Identify relevant requirements and tests.
@@ -52,6 +55,8 @@ For each substantial task:
 - Recommend a pull request when appropriate after implementation and testing.
 - Never commit, push, create or merge a pull request, or merge changes without my explicit approval.
 - Use the repository's GitHub issue templates when available.
+- Commit messages: lowercase words joined by underscores, starting with a verb (`add`, `fix`, `improve`, `create`, `start`), matching existing history. Example: `improve_README.md_(minor_details)`.
+- Branch names: lowercase words joined by hyphens, matching existing history. Example: `issue-templates`.
 
 ### 7. Learning and Mentoring
 - Help me become more independent as an AI engineer.
