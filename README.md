@@ -4,7 +4,7 @@
 
 ## 1. About the project
 
-This project aims to develop a full stack website for a carpenter, inculding a webshop of ready-made stock items as well as a structured messaging interface for custom product requests based on customer-specified dimensions and materials. For implementation, Claude Code is used as AI harness framework.
+This project aims to develop a full stack website for a carpenter, including a webshop of ready-made stock items as well as a structured messaging interface for custom product requests based on customer-specified dimensions and materials. For implementation, Claude Code is used as AI harness framework.
 
 ### 1.1. Project Goals
 **Primary Goals:**
@@ -20,6 +20,27 @@ This project aims to develop a full stack website for a carpenter, inculding a w
 GitHub repo url:  https://github.com/pasztorz/tdd-bdd-full-stack-project-with-Claude.git
 
 As this is a CV project, the repository is public.
+
+### 1.3. Project Status
+
+This project is in an early scaffolding stage:
+
+* Backend skeleton (Java/Maven) is set up; no production features are implemented yet.
+* No tests exist yet (TDD has not started in practice).
+* No frontend code exists yet.
+* No Cucumber/Gherkin setup or `.feature` files exist yet.
+* No CI/CD pipeline is configured yet.
+
+This section will be updated as the project progresses.
+
+### 1.4. Getting Started
+
+**Prerequisites:** Java 21, Maven.
+
+1. Clone the repository.
+2. Copy `.env.example` to `.env` and fill in real values locally (never commit `.env`).
+3. Build the project: `mvn compile`.
+4. Run the tests: `mvn test` (test suite is currently empty; this will grow as TDD work starts).
 
 ## 2. Approach and Technologies
 
@@ -56,8 +77,10 @@ This creates a development workflow in which:
     - Browser/UI automation: **`Selenium with Java`**
     - API - **`REST Assured with Java`**
     - BDD scenarios: **`Gherkin and Cucumber`**
-    - manual tests: **`Jira`**
+    - manual test case tracking: **`Jira`** (separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
   * *CI/CD:* **`GitHub Action`**
+
+  None of the Version 1 tools are installed yet except Java/Maven, JUnit, Selenium, and AssertJ (see `pom.xml`). REST Assured, Cucumber/Gherkin, Jira, and the CI/CD pipeline are still to be added.
 
 #### 2.2.2. Version 2 - Future Learning Goals:
 
