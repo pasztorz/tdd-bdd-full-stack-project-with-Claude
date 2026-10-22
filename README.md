@@ -91,6 +91,6 @@ Potential technologies to explore in later phase of the project:
   * *Tests:*
     - Browser/UI automation: **`Playwright with Python`**
     - API - **`Postman`**
-    - manual tests:
+    - manual tests execution: `Katalon IDE` or `Selenium IDE`
     - mobile development.
   
