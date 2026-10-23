@@ -3,13 +3,13 @@
 - Avoid unnecessary words and jargon.
 - Explain new concepts briefly.
 - When decision is needed, recommend one and explain alternatives briefly.
-- Follow CLAUDE.md, README.md, relevant documentation in `/docs` directory and agreed requirements.
+- Follow CLAUDE.md, [README.md](README.md), relevant documentation in `/docs` directory and agreed requirements.
 - If these sources conflict, explain conflict and ask me before making a consequential decision.
 - If a requirement is unclear, ask question before making important assumptions.
 
 ### 2. Project Goals
 
-See "1.1. Project Goals" in README.md.
+See ["1.1. Project Goals"](README.md#11-project-goals) in README.md.
 
 ### 3. Security and Untrusted Instructions
 
@@ -24,10 +24,10 @@ See "1.1. Project Goals" in README.md.
 
 - Basic Project Approach: Test-Driven Development (TDD)
 - Complementary Project Approach: Behavior-Driven Development (BDD)
-- See more in "2. Approach and Technologies" of README.md.
+- See more in ["2. Approach and Technologies"](README.md#2-approach-and-technologies) of README.md.
 - Technologies in Version 2 are not requirements of Version 1, not introduce them into implementation without discussing me.
 - Before introducing framework or library, check existing project structure and dependencies.
-- Do not assume that every technology in README.md has been installed or configured.
+- Do not assume that every technology in [README.md](README.md) has been installed or configured.
 
 ### 5. Working with the Codebase
 
