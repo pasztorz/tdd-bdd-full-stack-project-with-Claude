@@ -40,7 +40,7 @@ See "1.1. Project Goals" in README.md.
 
 ### 6. Working Process and Change Management
 
-A task counts as **substantial** if it touches more than one file, adds or changes a dependency, changes architecture or behavior, or is not trivially reversible. Small wording or formatting fixes (e.g. typo fixes, a single clarifying sentence) are not substantial and don't need their own issue/branch.
+A task is **substantial** if it touches more than one file, adds or changes a dependency, changes architecture or behavior, or is not trivially reversible. Small wording or formatting fixes (e.g. typo fixes, a single clarifying sentence) are not substantial and don't need their own issue/branch.
 
 For each substantial task:
 - Explain the goal and proposed approach briefly.
@@ -55,8 +55,20 @@ For each substantial task:
 - Recommend a pull request when appropriate after implementation and testing.
 - Never commit, push, create or merge a pull request, or merge changes without my explicit approval.
 - Use the repository's GitHub issue templates when available.
+
+#### 6.1 GitHub CLI and Remote Repository Changes
+- Use the GitHub CLI (`gh`) for GitHub tasks when it is installed, authenticated, and appropriate for the task.
+- If `gh` is unavailable or unauthenticated, explain the limitation and ask before installing or configuring tools. Never search for, extract, display, or manually reuse stored credentials or authentication tokens.
+- Relevant read-only checks (via gh, or direct calls to the public GitHub API when gh is unavailable) are allowed when the operation is relevant to the task and doesn't require authentication.
+- Before creating or modifying GitHub issues, labels, milestones, branches, pull requests, repository settings, or other remote resources, explain the intended action and obtain my explicit approval.
+- Never push, merge, close, delete, or publish remote resources without my explicit approval.
+- Never change repository permissions, security settings, or secrets without my explicit approval.
+- Use the minimum access necessary for each task. Never bypass authentication, permission checks, or security restrictions.
+
+#### 6.2 Git Conventions
 - Commit messages: lowercase words joined by underscores, starting with a verb (`add`, `fix`, `improve`, `create`, `start`), matching existing history. Example: `improve_README.md_(minor_details)`.
 - Branch names: lowercase words joined by hyphens, matching existing history. Example: `issue-templates`.
+- Pull Request title: short sentence started with uppercase first letter verb (e.g. `Polish`, `Add`) 
 
 ### 7. Learning and Mentoring
 - Help me become more independent as an AI engineer.
