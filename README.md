@@ -70,8 +70,8 @@ This creates a development workflow in which:
 
   For this stack, *technologies `known by me`* at the moment of starting with the implementation are used. 
 
-  * *Frontend:* **`React`** (JavaScript)
-  * *Backend:* **`Java`**
+  * *Frontend:* **`React`** (JavaScript) with **`Bootstrap`** for styling
+  * *Backend:* **`Spring Boot`** (Java)
   * *Tests:*
     - Frontend unit tests: **`Vitest`**
     - Frontend component tests: **`Vitest`** and **`React Testing Library`**
@@ -82,7 +82,7 @@ This creates a development workflow in which:
     - manual test execution: **`Jira`** (used to run and record manual test results; separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
   * *CI/CD:* **`GitHub Action`**
 
-  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Vitest, React Testing Library, Jira, and the CI/CD pipeline are still to be added.
+  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Bootstrap, Vitest, React Testing Library, Spring Boot, Jira, and the CI/CD pipeline are still to be added.
 
 #### 2.2.2. Version 2 - Future Learning Goals:
 
