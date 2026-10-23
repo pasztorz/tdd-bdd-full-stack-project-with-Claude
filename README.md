@@ -70,23 +70,25 @@ This creates a development workflow in which:
 
   For this stack, *technologies `known by me`* at the moment of starting with the implementation are used. 
 
-  * *Frontend:* **`Javascript`**
+  * *Frontend:* **`React`** (JavaScript)
   * *Backend:* **`Java`**
   * *Tests:*
-    - Unit tests: **`JUnit`**
+    - Frontend unit tests: **`Vitest`**
+    - Frontend component tests: **`Vitest`** and **`React Testing Library`**
+    - Backend unit tests: **`JUnit`**
     - Browser/UI automation: **`Selenium with Java`**
     - API - **`REST Assured with Java`**
     - BDD scenarios: **`Gherkin and Cucumber`**
     - manual test execution: **`Jira`** (used to run and record manual test results; separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
   * *CI/CD:* **`GitHub Action`**
 
-  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). Jira and the CI/CD pipeline are still to be added.
+  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Vitest, React Testing Library, Jira, and the CI/CD pipeline are still to be added.
 
 #### 2.2.2. Version 2 - Future Learning Goals:
 
 Potential technologies to explore in later phase of the project:
 
-  * *Frontend:* **`Typescript`**
+  * *Frontend:* **`TypeScript`** (migrate the React frontend to TypeScript)
   * *Backend and mobile devices:* **`Python`**
   * *Tests:*
     - Browser/UI automation: **`Playwright with Python`**
@@ -104,6 +106,7 @@ See [docs/roadmap.md](docs/roadmap.md) for the full phase-by-phase breakdown, in
 2. Requirements and User Stories
 3. Technology and Development Foundations
 4. First Working Website
-5. Webshop and Custom Product Requests
-6. CI/CD and Delivery Readiness
-7. Review and Future Learning
+5. Message-Sender Extension (Custom Product Requests)
+6. Webshop Extension
+7. CI/CD and Delivery Readiness
+8. Review and Future Learning
