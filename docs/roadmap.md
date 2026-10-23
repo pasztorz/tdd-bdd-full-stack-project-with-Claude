@@ -29,9 +29,9 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 ### Phase 3 — Technology and Development Foundations
 
 - Confirm the Version 1 technology stack based on the project goals and learning objectives.
-- Set up the React frontend.
+- Set up the React frontend with Bootstrap for styling.
 - Configure Vitest and React Testing Library for frontend component tests.
-- Set up the Java backend.
+- Set up the Java backend with Spring Boot.
 - Configure JUnit and the initial testing structure.
 - Establish a basic GitHub Actions CI workflow early in development.
 - Configure automated checks for relevant tests and build steps.
@@ -54,7 +54,7 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 
 ### Phase 5 — Message-Sender Extension (Custom Product Requests)
 
-- Introduce the Java backend web layer (framework choice to be confirmed and approved separately).
+- Introduce the Java backend web layer using Spring Boot.
 - Wire the Contact section's form to a real backend endpoint, so a custom product request (dimensions and material choices) is actually submitted via the API.
 - Use simple persistence (e.g. in-memory or file-based) for submitted requests — no database yet.
 - Validate user input and handle errors appropriately.
