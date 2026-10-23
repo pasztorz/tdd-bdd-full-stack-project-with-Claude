@@ -55,14 +55,15 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 ### Phase 5 — Message-Sender Extension (Custom Product Requests)
 
 - Introduce the Java backend web layer using Spring Boot.
-- Wire the Contact section's form to a real backend endpoint, so a custom product request (dimensions and material choices) is actually submitted via the API.
-- Use simple persistence (e.g. in-memory or file-based) for submitted requests — no database yet.
+- Wire the Custom Order Request form — reachable via its own dedicated navigation item and from the Contact section — to a real backend endpoint, so a custom product request (dimensions and material choices) is actually submitted via the API.
+- Add optional user registration and login (using Spring Security) during the ordering flow, so a visitor can place a custom order either as a guest or as a registered user.
+- Use simple persistence (e.g. in-memory or file-based) for submitted requests and registered accounts — no database yet.
 - Validate user input and handle errors appropriately.
 - Add Gherkin/Cucumber scenarios for important business behaviors.
 - Add REST Assured API tests for the new endpoint.
 - Update the backlog and acceptance criteria as requirements evolve.
 
-**Outcome:** The custom product request feature is implemented end-to-end (React frontend + Java backend) and verified against its acceptance criteria — the project's first full-stack feature.
+**Outcome:** The custom product request feature, including optional registration/login, is implemented end-to-end (React frontend + Java backend) and verified against its acceptance criteria — the project's first full-stack feature.
 
 ### Phase 6 — Webshop Extension
 
