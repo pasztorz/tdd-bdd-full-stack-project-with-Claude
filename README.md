@@ -65,7 +65,7 @@ This creates a development workflow in which:
 * Production code is implemented incrementally to satisfy the tests and requirements.
 * Claude Code is used as an AI-assisted development tool throughout this process.
 
-### 2.2 Technology Roadmap
+### 2.2 Technology Stack by Version
 #### 2.2.1 Version 1 - Initial (Development) Technology Stack
 
   For this stack, *technologies `known by me`* at the moment of starting with the implementation are used. 
@@ -93,4 +93,17 @@ Potential technologies to explore in later phase of the project:
     - API - **`Postman`**
     - manual tests execution: `Katalon IDE` or `Selenium IDE`
     - mobile development.
-  
+
+## 3. Development Roadmap
+
+The project will be developed incrementally, using Test-Driven Development (TDD) as the primary development approach and Behavior-Driven Development (BDD) where appropriate. The roadmap is a living plan: its phases may be refined as the project evolves and new lessons are learned.
+
+See [docs/roadmap.md](docs/roadmap.md) for the full phase-by-phase breakdown, including concrete actions and outcomes. Phases:
+
+1. Project Preparation
+2. Requirements and User Stories
+3. Technology and Development Foundations
+4. First Working Website
+5. Webshop and Custom Product Requests
+6. CI/CD and Delivery Readiness
+7. Review and Future Learning
