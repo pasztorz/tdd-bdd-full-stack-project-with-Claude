@@ -10,7 +10,8 @@ This project aims to develop a full stack website for a carpenter, including a w
 **Primary Goals:**
 - develop a carpenter website
 - with a webshop for ready-made stock items
-- and with a message sender function as a standardised framework to order custom products by size and material.
+- with a message sender function as a standardised framework to order custom products by size and material
+- and with optional user registration and login, so a customer can place a custom product order either as a guest or as a registered user.
 
 **Secondary Goals**
 - learn and practice complementary technologies
@@ -71,7 +72,7 @@ This creates a development workflow in which:
   For this stack, *technologies `known by me`* at the moment of starting with the implementation are used. 
 
   * *Frontend:* **`React`** (JavaScript) with **`Bootstrap`** for styling
-  * *Backend:* **`Spring Boot`** (Java)
+  * *Backend:* **`Spring Boot`** (Java), with **`Spring Security`** for optional user registration and login
   * *Tests:*
     - Frontend unit tests: **`Vitest`**
     - Frontend component tests: **`Vitest`** and **`React Testing Library`**
@@ -82,7 +83,7 @@ This creates a development workflow in which:
     - manual test execution: **`Jira`** (used to run and record manual test results; separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
   * *CI/CD:* **`GitHub Action`**
 
-  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Bootstrap, Vitest, React Testing Library, Spring Boot, Jira, and the CI/CD pipeline are still to be added.
+  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Bootstrap, Vitest, React Testing Library, Spring Boot, Spring Security, Jira, and the CI/CD pipeline are still to be added.
 
 #### 2.2.2. Version 2 - Future Learning Goals:
 
