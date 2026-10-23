@@ -29,7 +29,9 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 ### Phase 3 — Technology and Development Foundations
 
 - Confirm the Version 1 technology stack based on the project goals and learning objectives.
-- Set up the Java backend and JavaScript frontend.
+- Set up the React frontend.
+- Configure Vitest and React Testing Library for frontend component tests.
+- Set up the Java backend.
 - Configure JUnit and the initial testing structure.
 - Establish a basic GitHub Actions CI workflow early in development.
 - Configure automated checks for relevant tests and build steps.
@@ -41,27 +43,40 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 
 ### Phase 4 — First Working Website
 
-- Build a small end-to-end vertical slice connecting the frontend and backend.
-- Add the basic carpenter business website structure and business information.
-- Develop the first feature using TDD: write a failing test, implement the minimum solution, and refactor.
-- Add integration and API tests where appropriate.
-- Verify that the CI workflow runs successfully on proposed changes.
+- Build the static one-page carpenter business website in React: Home, About/Services, and Contact as sections shown via state, not separate page loads.
+- Add the basic business information and navigation between sections.
+- Develop the first feature using TDD: write a failing Vitest/React Testing Library component test for section switching, implement the minimum React code to pass, and refactor.
+- Add a Cucumber/Selenium acceptance test as a higher-level smoke check of the same behavior in a real browser.
+- Verify that the CI workflow (Vitest and Selenium/Cucumber) runs successfully on proposed changes.
+- No backend or API work yet — the Java backend is introduced in Phase 5, with the message-sender feature.
 
-**Outcome:** A small but working application with automated tests and CI checks.
+**Outcome:** A small but working static website with component-level and acceptance-level automated tests, verified by CI.
 
-### Phase 5 — Webshop and Custom Product Requests
+### Phase 5 — Message-Sender Extension (Custom Product Requests)
+
+- Introduce the Java backend web layer (framework choice to be confirmed and approved separately).
+- Wire the Contact section's form to a real backend endpoint, so a custom product request (dimensions and material choices) is actually submitted via the API.
+- Use simple persistence (e.g. in-memory or file-based) for submitted requests — no database yet.
+- Validate user input and handle errors appropriately.
+- Add Gherkin/Cucumber scenarios for important business behaviors.
+- Add REST Assured API tests for the new endpoint.
+- Update the backlog and acceptance criteria as requirements evolve.
+
+**Outcome:** The custom product request feature is implemented end-to-end (React frontend + Java backend) and verified against its acceptance criteria — the project's first full-stack feature.
+
+### Phase 6 — Webshop Extension
 
 - Implement prioritized User Stories for product browsing and product details.
-- Develop the custom product request workflow, including dimensions and material choices.
+- Introduce a real database (e.g. H2 or Postgres — to be decided and approved) for structured, queryable product data.
 - Validate user input and handle errors appropriately.
 - Add Gherkin/Cucumber scenarios for important business behaviors.
 - Extend automated tests with REST Assured API tests and Selenium UI tests where appropriate.
 - Set up Jira to run and record manual test execution for exploratory and manual test coverage.
 - Update the backlog and acceptance criteria as requirements evolve.
 
-**Outcome:** The core Version 1 features are implemented and verified against their acceptance criteria.
+**Outcome:** The webshop is implemented and verified against its acceptance criteria, completing the core Version 1 feature set.
 
-### Phase 6 — CI/CD and Delivery Readiness
+### Phase 7 — CI/CD and Delivery Readiness
 
 - Expand the GitHub Actions pipeline to run relevant automated tests and build checks.
 - Ensure that failures are visible and prevent changes from being treated as successfully verified.
@@ -72,7 +87,7 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 
 **Outcome:** A repeatable, automated build and verification process, with deployment automation when the project is ready.
 
-### Phase 7 — Review and Future Learning
+### Phase 8 — Review and Future Learning
 
 - Review the architecture, test coverage, code quality, accessibility, and security.
 - Document lessons learned from TDD, BDD, and working with Claude Code.
