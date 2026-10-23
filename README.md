@@ -77,7 +77,7 @@ This creates a development workflow in which:
     - Browser/UI automation: **`Selenium with Java`**
     - API - **`REST Assured with Java`**
     - BDD scenarios: **`Gherkin and Cucumber`**
-    - manual test case tracking: **`Jira`** (separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
+    - manual test execution: **`Jira`** (used to run and record manual test results; separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
   * *CI/CD:* **`GitHub Action`**
 
   None of the Version 1 tools are installed yet except Java/Maven, JUnit, Selenium, and AssertJ (see `pom.xml`). REST Assured, Cucumber/Gherkin, Jira, and the CI/CD pipeline are still to be added.
@@ -91,6 +91,6 @@ Potential technologies to explore in later phase of the project:
   * *Tests:*
     - Browser/UI automation: **`Playwright with Python`**
     - API - **`Postman`**
-    - manual tests:
+    - manual tests execution: `Katalon IDE` or `Selenium IDE`
     - mobile development.
   
