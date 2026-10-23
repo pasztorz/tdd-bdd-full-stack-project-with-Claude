@@ -1,0 +1,41 @@
+
+name: Task / Chore
+description: Propose or track non-bug, non-feature maintenance work (docs, config, dependencies, tooling).
+title: "[Task]: "
+labels: ["chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for maintenance work that isn't a bug fix or a user-facing
+        feature — e.g. updating documentation, adjusting configuration,
+        adding or upgrading a dependency, or improving tooling.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What needs to change, and why
+      description: Describe the task and the reason it's needed.
+      placeholder: "Add REST Assured to pom.xml so API tests can be written, matching the Version 1 stack in README.md."
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition of Done
+      description: How will we know this task is complete?
+      placeholder: |
+        Given pom.xml is updated
+        When mvn test-compile is run
+        Then the new dependency resolves successfully.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: Add relevant technical details, affected files, or related issues.
+    validations:
+      required: false
