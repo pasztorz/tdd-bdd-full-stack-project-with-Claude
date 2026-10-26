@@ -14,6 +14,9 @@ This document describes test levels, test ownership, execution commands, and how
 | API | REST Assured | A backend REST endpoint over HTTP, black-box | `src/test/java/com/codecool/.../api` |
 | Acceptance / UI (BDD) | Selenium + Cucumber/Gherkin | A full user story, driven through a real browser | Scenarios in `features/*.feature`; step definitions in `src/test/java/com/codecool/.../steps` |
 | Manual | Jira | Exploratory and manual test case recording (Phase 6 onward) | Jira, separate from GitHub Issues (which track development tasks) |
+| Load/performance | Gatling | Verifies the app holds up under expected load | Simulations added in Phase 7 (exact source directory follows `gatling-maven-plugin` conventions, decided when that phase starts) |
+
+Load/performance testing runs before release, not as part of the regular TDD loop — it's a Phase 7 (CI/CD and Delivery Readiness) concern, not something exercised on every `mvn test`.
 
 Each `features/*.feature` file maps 1:1 to a user story in `docs/requirements.md` — e.g. `features/home_page.feature` for US-1 — replacing that story's "Gherkin Scenario: not yet created" placeholder once written.
 
@@ -36,6 +39,7 @@ Gherkin scenarios describe *what* the system should do; unit and component tests
 - **Backend (today):** `mvn test` — runs JUnit unit tests, REST Assured API tests, and Cucumber scenarios together. Cucumber runs through the JUnit Platform Suite runner, so no separate command is needed.
 - **Frontend (once set up):** `npm test` or `npx vitest` — runs unit and component tests.
 - **CI:** Phase 3 adds a basic GitHub Actions workflow running these commands on every push and PR. Phase 7 expands this into the full build/package/deploy pipeline.
+- **Load/performance (Phase 7):** `mvn gatling:test` — runs the load/performance simulations once added; not part of the default `mvn test` run.
 
 ## 5. Manual testing (Jira)
 
@@ -43,4 +47,4 @@ Not needed until Phase 6. Jira will record manual and exploratory test runs for 
 
 ## 6. Out of scope (for now)
 
-Mutation testing, contract testing, and load/performance testing are not part of the agreed Version 1 stack. They could be revisited as Version 2 learning goals (see `README.md` §2.2.2) if there's a reason to.
+Mutation testing is not part of the agreed Version 1 stack. It's flagged as a Version 2 learning goal (see `README.md` §2.2.2) in case there's a reason to revisit it.

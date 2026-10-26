@@ -93,6 +93,8 @@ Potential technologies to explore in later phase of the project:
     - API - **`Postman`**
     - manual tests execution: `Katalon IDE` or `Selenium IDE`
     - mobile development.
+    - Mutation testing: **`PIT`** (evaluate how effective the existing test suite is at catching bugs)
+    - Load/performance testing: explore **`JMeter`** as an alternative to Gatling, and compare authoring style, CI integration, and reporting
 
 ## 3. Development Roadmap
 

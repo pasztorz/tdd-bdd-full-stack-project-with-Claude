@@ -81,6 +81,7 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 
 - Expand the GitHub Actions pipeline to run relevant automated tests and build checks.
 - Ensure that failures are visible and prevent changes from being treated as successfully verified.
+- Add load/performance testing with Gatling to verify the app holds up under expected load, before Version 1 is considered complete.
 - Add packaging or build artifact generation where appropriate.
 - Prepare application configuration and secrets management for deployment.
 - Add a deployment workflow when a suitable hosting environment is available.
