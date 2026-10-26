@@ -73,7 +73,7 @@ This creates a development workflow in which:
 
   * *Frontend:* **`React`** (JavaScript) with **`Bootstrap`** for styling
   * *Backend:* **`Spring Boot`** (Java), with **`Spring Security`** for optional user registration and login
-  * *Database:* **`SQL`** with **`Prostgres`**
+  * *Database:* **`SQL`** with **`Postgres`**
   * *Tests:*
     - Frontend unit tests: **`Vitest`**
     - Frontend component tests: **`Vitest`** and **`React Testing Library`**
