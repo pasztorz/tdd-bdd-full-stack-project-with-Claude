@@ -73,6 +73,7 @@ This creates a development workflow in which:
 
   * *Frontend:* **`React`** (JavaScript) with **`Bootstrap`** for styling
   * *Backend:* **`Spring Boot`** (Java), with **`Spring Security`** for optional user registration and login
+  * *Database:* **`SQL`** with **`Prostgres`**
   * *Tests:*
     - Frontend unit tests: **`Vitest`**
     - Frontend component tests: **`Vitest`** and **`React Testing Library`**
@@ -91,6 +92,7 @@ Potential technologies to explore in later phase of the project:
 
   * *Frontend:* **`TypeScript`** (migrate the React frontend to TypeScript)
   * *Backend and mobile devices:* **`Python`**
+  * *Database:* Explore **`Firebase`**/**`Cloud Firestore`** as an alternative to PostgreSQL and compare their data models, integration, security, and testing approaches.
   * *Tests:*
     - Browser/UI automation: **`Playwright with Python`**
     - API - **`Postman`**
