@@ -74,15 +74,10 @@ This creates a development workflow in which:
   * *Frontend:* **`React`** (JavaScript) with **`Bootstrap`** for styling
   * *Backend:* **`Spring Boot`** (Java), with **`Spring Security`** for optional user registration and login
   * *Database:* **`SQL`** with **`Postgres`**
-  * *Tests:*
-    - Frontend unit tests: **`Vitest`**
-    - Frontend component tests: **`Vitest`** and **`React Testing Library`**
-    - Backend unit tests: **`JUnit`**
-    - Browser/UI automation: **`Selenium with Java`**
-    - API - **`REST Assured with Java`**
-    - BDD scenarios: **`Gherkin and Cucumber`**
-    - manual test execution: **`Jira`** (used to run and record manual test results; separate from day-to-day task tracking, which uses GitHub Issues — see `CLAUDE.md`)
   * *CI/CD:* **`GitHub Action`**
+  * *Tests:* for the full test levels, tools, and workflow, check out [docs/testing-strategy.md](docs/testing-strategy.md)
+
+  See [docs/architecture.md](docs/architecture.md) for how these pieces fit together.
 
   Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Bootstrap, Vitest, React Testing Library, Spring Boot, Spring Security, Jira, and the CI/CD pipeline are still to be added.
 
@@ -98,6 +93,8 @@ Potential technologies to explore in later phase of the project:
     - API - **`Postman`**
     - manual tests execution: `Katalon IDE` or `Selenium IDE`
     - mobile development.
+    - Mutation testing: **`PIT`** (evaluate how effective the existing test suite is at catching bugs)
+    - Load/performance testing: explore **`JMeter`** as an alternative to Gatling, and compare authoring style, CI integration, and reporting
 
 ## 3. Development Roadmap
 
