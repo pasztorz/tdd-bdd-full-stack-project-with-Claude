@@ -57,7 +57,7 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 - Introduce the Java backend web layer using Spring Boot.
 - Wire the Custom Order Request form — reachable via its own dedicated navigation item and from the Contact section — to a real backend endpoint, so a custom product request (dimensions and material choices) is actually submitted via the API.
 - Add optional user registration and login (using Spring Security) during the ordering flow, so a visitor can place a custom order either as a guest or as a registered user.
-- Use simple persistence (e.g. in-memory or file-based) for submitted requests and registered accounts — no database yet.
+- Use PostgreSQL to persist submitted requests and registered accounts.
 - Validate user input and handle errors appropriately.
 - Add Gherkin/Cucumber scenarios for important business behaviors.
 - Add REST Assured API tests for the new endpoint.
@@ -68,7 +68,7 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 ### Phase 6 — Webshop Extension
 
 - Implement prioritized User Stories for product browsing and product details.
-- Introduce a real database (e.g. H2 or Postgres — to be decided and approved) for structured, queryable product data.
+- Extend the existing PostgreSQL database with structured, queryable product data for the webshop.
 - Validate user input and handle errors appropriately.
 - Add Gherkin/Cucumber scenarios for important business behaviors.
 - Extend automated tests with REST Assured API tests and Selenium UI tests where appropriate.
