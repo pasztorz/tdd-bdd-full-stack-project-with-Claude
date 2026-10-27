@@ -44,8 +44,9 @@ The roadmap is a living plan. Its phases may be refined as the project evolves a
 ### Phase 4 — First Working Website
 
 - Build the static one-page carpenter business website in React: Home, About/Services, and Contact as sections shown via state, not separate page loads.
-- Add the basic business information and navigation between sections.
-- Develop the first feature using TDD: write a failing Vitest/React Testing Library component test for section switching, implement the minimum React code to pass, and refactor.
+- Develop the first feature using TDD, in two incremental cycles:
+  1. Home section content (business name, background picture, short description) — write a failing Vitest/React Testing Library component test, implement the minimum React code to pass, and refactor.
+  2. Navigation and section switching (About/Services, Custom Order Request, and Contact as placeholder stubs for now) — write a failing Vitest/React Testing Library component test for switching between sections, implement, and refactor.
 - Add a Cucumber/Selenium acceptance test as a higher-level smoke check of the same behavior in a real browser.
 - Verify that the CI workflow (Vitest and Selenium/Cucumber) runs successfully on proposed changes.
 - No backend or API work yet — the Java backend is introduced in Phase 5, with the message-sender feature.
