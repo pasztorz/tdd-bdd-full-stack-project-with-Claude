@@ -19,7 +19,7 @@ _To be defined._
 - The home page shows the business name, a home page background picture and a short description of what the business offers.
 - The home page provides navigation to the other sections of the site (e.g. About/Services, Custom Order Request, Contact).
 
-**Gherkin Scenario:** _not yet created — will be added as a `.feature` file under `features/` once Cucumber is set up (Phase 3), and linked here._
+**Gherkin Scenario:** [features/home_page.feature](../features/home_page.feature)
 
 ### US-2: View the About/Services section
 
