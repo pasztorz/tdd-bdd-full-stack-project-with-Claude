@@ -1,6 +1,6 @@
 #
-# <p style="text-align:center">Carpenter Website<br>and Webshop</p>
-## <p style="text-align:center">Full Stack Project<br><br>applying Test-Driven Development and<br>Behavior-Driven Development<br>Approach<br>and Claude Code AI Harness Framework</p>
+# Carpenter Website and Webshop</p>
+## Full Stack Project<br><br>applying Test-Driven Development and Behavior-Driven Development Approach<br><br>and Claude Code AI Harness Framework</p>
 
 ## 1. About the project
 
@@ -28,7 +28,7 @@ This project is in an early scaffolding stage:
 
 * Backend skeleton (Java/Maven) is set up; no production features are implemented yet.
 * No tests exist yet (TDD has not started in practice).
-* Frontend scaffold (Vite + React + Bootstrap, with Vitest + React Testing Library configured) is set up in `frontend/`; no Home/About/Contact content implemented yet.
+* No frontend code exists yet.
 * No Cucumber/Gherkin setup or `.feature` files exist yet.
 * No CI/CD pipeline is configured yet.
 
@@ -36,15 +36,12 @@ This section will be updated as the project progresses.
 
 ### 1.4. Getting Started
 
-**Prerequisites:** Java 21, Maven, Node.js (with npm).
+**Prerequisites:** Java 21, Maven.
 
 1. Clone the repository.
 2. Copy `.env.example` to `.env` and fill in real values locally (never commit `.env`).
-3. Build the backend: `mvn compile`.
-4. Run the backend tests: `mvn test` (test suite is currently empty; this will grow as TDD work starts).
-5. Install frontend dependencies: `cd frontend && npm install`.
-6. Run the frontend dev server: `npm run dev` (inside `frontend/`).
-7. Run the frontend tests: `npm test` (inside `frontend/`).
+3. Build the project: `mvn compile`.
+4. Run the tests: `mvn test` (test suite is currently empty; this will grow as TDD work starts).
 
 ## 2. Approach and Technologies
 
@@ -82,7 +79,7 @@ This creates a development workflow in which:
 
   See [docs/architecture.md](docs/architecture.md) for how these pieces fit together.
 
-  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Bootstrap, Vitest, and React Testing Library are installed (see `frontend/package.json`). Spring Boot, Spring Security, Jira, and the CI/CD pipeline are still to be added.
+  Java/Maven, JUnit, Selenium, AssertJ, REST Assured, and Cucumber/Gherkin are installed (see `pom.xml`). React, Bootstrap, Vitest, React Testing Library, Spring Boot, Spring Security, Jira, and the CI/CD pipeline are still to be added.
 
 #### 2.2.2. Version 2 - Future Learning Goals:
 
