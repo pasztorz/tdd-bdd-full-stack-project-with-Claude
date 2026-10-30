@@ -2,7 +2,7 @@
 
 This document describes test levels, test ownership, execution commands, and how unit, integration, API, UI, and acceptance tests fit together. Test-Driven Development (TDD) is the primary approach; Behavior-Driven Development (BDD), via Gherkin and Cucumber, complements it for acceptance-level behavior. It is a living document — update it as testing practice grows.
 
-**Current status:** test dependencies are installed (see `pom.xml`), but no tests, and no `.feature` files, exist yet (see `README.md` §1.3).
+**Current status:** test dependencies are installed (see `pom.xml`). The first acceptance test exists (`features/home_page.feature`, covering US-1), but no unit or API tests exist yet (see `README.md` §1.3).
 
 ## 1. Test levels and tools
 

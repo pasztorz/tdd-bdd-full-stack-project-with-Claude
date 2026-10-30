@@ -24,24 +24,25 @@ As this is a CV project, the repository is public.
 
 ### 1.3. Project Status
 
-This project is in an early scaffolding stage:
+The project has a working static one-page frontend and its first BDD acceptance test; backend/API work has not started:
 
-* Backend skeleton (Java/Maven) is set up; no production features are implemented yet.
-* No tests exist yet (TDD has not started in practice).
-* No frontend code exists yet.
-* No Cucumber/Gherkin setup or `.feature` files exist yet.
+* Backend skeleton (Java/Maven) is set up; no production features are implemented yet (backend work starts in Phase 5).
+* Frontend (React + Vite + Bootstrap) is scaffolded, with the Home section and navigation/section-switching built via TDD (Vitest + React Testing Library component tests).
+* The first Cucumber/Selenium acceptance test exists (`features/home_page.feature`, covering US-1); other user stories' scenarios are not yet written.
+* No backend unit or API tests exist yet — there is no backend behavior yet to test.
 * No CI/CD pipeline is configured yet.
 
 This section will be updated as the project progresses.
 
 ### 1.4. Getting Started
 
-**Prerequisites:** Java 21, Maven.
+**Prerequisites:** Java 21, Maven, Node.js.
 
 1. Clone the repository.
 2. Copy `.env.example` to `.env` and fill in real values locally (never commit `.env`).
 3. Build the project: `mvn compile`.
-4. Run the tests: `mvn test` (test suite is currently empty; this will grow as TDD work starts).
+4. Run the backend/acceptance test suite: `mvn test` (runs the Cucumber/Selenium acceptance test against the frontend).
+5. Run the frontend component tests: `cd frontend && npm test` (or `npx vitest`).
 
 ## 2. Approach and Technologies
 
